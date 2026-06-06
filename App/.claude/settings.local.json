@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew assembleDebug --console=plain)",
+      "Bash(keytool -genkeypair -v -keystore release-keystore.jks -alias taskmate -keyalg RSA -keysize 2048 -validity 10000 -storepass taskmate123 -keypass taskmate123 -dname 'CN=TaskMate, OU=University Project, O=TaskMate, L=City, ST=State, C=PK')",
+      "Bash(echo \"EXIT:$?\")"
+    ]
+  }
+}
